@@ -1,0 +1,9 @@
+def function_name(
+    positional_or_required,
+    default_parameter=value,
+    *args,
+    keyword_only_parameter,
+    keyword_only_default=value,
+    **kwargs
+):
+    pass
