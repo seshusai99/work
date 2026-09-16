@@ -7,3 +7,52 @@ def function_name(
     **kwargs
 ):
     pass
+
+
+def demo(a, b=10, *args, c, d=20, **kwargs):
+    print("a =", a)
+    print("b =", b)
+    print("args =", args)
+    print("c =", c)
+    print("d =", d)
+    print("kwargs =", kwargs)
+
+Case 1: Minimum Required
+      demo(1, c=5)
+
+Case 2: Override Default Parameter
+     demo(1, 2, c=5)
+
+Case 3: Use Keyword for Normal Parameter
+      demo(a=1, b=2, c=5)
+
+Case 4: Order Changed Using Keywords
+       demo(c=5, a=1, b=2)
+
+Case 5: Extra Positional Arguments
+       demo(1, 2, 3, 4, 5, c=6)
+
+Case 6: Override Keyword-Only Default
+      demo(1, c=5, d=100)
+
+Case 7: Extra Keyword Arguments
+      demo(1, c=5, city="London", age=25)
+
+Case 8: Everything Together
+    demo(
+    1,
+    2,
+    3,
+    4,
+    c=5,
+    d=6,
+    city="London",
+    age=25
+)
+
+
+
+
+
+
+
