@@ -51,6 +51,12 @@ Case 8: Everything Together
 )
 
 
+Invalid Cases
+ 1. Missing Required a  demo(c=5)
+
+2. Missing Required Keyword-Only c demo(1)
+
+3. Passing c Positionally  demo(1, 2, 3)
 
 
 
